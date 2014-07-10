@@ -49,13 +49,11 @@ switch (auto) {
 
 if (mpgReal <10) {
   mpgReal = 10;
-}else{
 };
 
 var cost = (mile / mpgReal) * price;
 
 var fillup = mile / (mpgReal * tank);
-fillup = parseInt(fillup);
 
 //final console.log
 
@@ -66,4 +64,4 @@ console.log('***RESULTS***');
 console.log('You will be driving', mile, 'miles.');
 console.log('Your real world mpg will be', mpgReal, 'mpg.');
 console.log('You can expect to pay $' + cost, 'on this trip.');
-console.log('You will need to fill your tank', fillup, 'times.');
+console.log('You will need to fill your tank', Math.ceil(fillup), 'times.');
