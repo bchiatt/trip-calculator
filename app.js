@@ -55,6 +55,7 @@ if (mpgReal <10) {
 var cost = (mile / mpgReal) * price;
 
 var fillup = mile / (mpgReal * tank);
+fillup = parseInt(fillup);
 
 //final console.log
 
